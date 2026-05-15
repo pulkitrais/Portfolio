@@ -13,5 +13,5 @@ export const mySkills = [
 export const about = {
   name: 'Pulkit Rai',
   description:
-    'B.Tech in Cyber Security & Digital Forensics at Galgotias University (2022–2026, expected). I focus on SOC operations, incident response, threat hunting, and defensive security automation aligned with real-world blue-team workflows.',
+    'B.Tech in Cybersecurity & Digital Forensics at Galgotias University (2022–2026, expected). I focus on SOC operations, incident response, threat hunting, and defensive security automation aligned with real-world blue-team workflows.',
 };
