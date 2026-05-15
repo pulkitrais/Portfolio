@@ -1,94 +1,74 @@
 import AWS from '@/components/technologies/AWS';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import ReactIcon from '@/components/technologies/ReactIcon';
-import TailwindCss from '@/components/technologies/TailwindCss';
+import Postman from '@/components/technologies/Postman';
 import TypeScript from '@/components/technologies/TypeScript';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    title: 'SOC Lab on Azure',
+    title: 'Azure Sentinel SIEM + SOAR Implementation Lab',
     description:
-      'Built a practical SOC lab in Azure with SIEM pipelines, alert rules, incident triage playbooks, and dashboard-driven threat visibility.',
+      'Architected and deployed a production-grade Sentinel SIEM + SOAR environment with KQL detections, automation rules, and real-time incident response workflows.',
     image: '/project/notesbuddy.png',
-    link: '#',
+    link: 'https://github.com/pulkitrais',
     technologies: [
-      { name: 'Cloud SIEM', icon: <AWS key="aws" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'Azure Sentinel', icon: <AWS key="aws" /> },
+      { name: 'KQL Analytics', icon: <TypeScript key="typescript" /> },
+      { name: 'SOAR Playbooks', icon: <Postman key="postman" /> },
     ],
     github: 'https://github.com/pulkitrais',
-    live: '#',
+    live: 'https://github.com/pulkitrais',
     details: false,
     projectDetailsPageSlug: '/projects',
     isWorking: true,
   },
   {
-    title: 'Human-Centric Cybersecurity Thesis',
+    title: 'Independent SOC Operations & Blue Team Projects',
     description:
-      'Research thesis on human factors in cybersecurity, balancing user behavior, security controls, and response workflows to reduce real-world risk.',
+      'Built hands-on defensive security workflows for alert triage, threat hunting, incident response, and purple-team simulations aligned with MITRE ATT&CK.',
     image: '/project/appwrite.png',
-    link: '#',
+    link: 'https://github.com/pulkitrais',
     technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Detection Engineering', icon: <TypeScript key="typescript" /> },
+      { name: 'Threat Hunting', icon: <NodeJs key="nodejs" /> },
+      { name: 'MITRE ATT&CK', icon: <Postman key="postman" /> },
     ],
     github: 'https://github.com/pulkitrais',
-    live: '#',
+    live: 'https://github.com/pulkitrais',
     details: false,
     projectDetailsPageSlug: '/projects',
     isWorking: true,
   },
   {
-    title: 'Wearthebeer',
+    title: 'deleteditems (Digital Forensics Utility)',
     description:
-      'Designed and secured an e-commerce workflow with hardened auth, secure checkout patterns, and monitoring-first operational controls.',
+      'Focused forensic utility for recovering deleted artifacts and investigating user-deleted traces to support practical digital forensics workflows.',
     image: '/project/syncify.png',
-    link: '#',
+    link: 'https://github.com/pulkitrais',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+      { name: 'Digital Forensics', icon: <Postman key="postman" /> },
+      { name: 'Automation', icon: <NodeJs key="nodejs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
     ],
     github: 'https://github.com/pulkitrais',
-    live: '#',
+    live: 'https://github.com/pulkitrais',
     details: false,
     projectDetailsPageSlug: '/projects',
     isWorking: true,
   },
   {
-    title: 'Cachedrive',
+    title: 'cachedrive (Security Utility)',
     description:
-      'Implemented a secure file and cache service architecture on AWS with policy controls, telemetry hooks, and reliability-focused data handling.',
+      'Built a utility focused on recovering cached artifacts and supporting malware-analysis and OSINT-adjacent investigations.',
     image: '/project/festx.png',
-    link: '#',
+    link: 'https://github.com/pulkitrais',
     technologies: [
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'AWS', icon: <AWS key="aws" /> },
+      { name: 'Cloud Security', icon: <AWS key="aws" /> },
     ],
     github: 'https://github.com/pulkitrais',
-    live: '#',
-    details: false,
-    projectDetailsPageSlug: '/projects',
-    isWorking: true,
-  },
-  {
-    title: 'Music-based social media platform',
-    description:
-      'Built a social platform centered around music sharing with moderation-aware design, protected user flows, and scalable backend services.',
-    image: '/project/moonstone.png',
-    link: '#',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-    ],
-    github: 'https://github.com/pulkitrais',
-    live: '#',
+    live: 'https://github.com/pulkitrais',
     details: false,
     projectDetailsPageSlug: '/projects',
     isWorking: true,

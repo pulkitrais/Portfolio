@@ -1,8 +1,6 @@
 import { heroConfig, skillComponents, socialLinks } from '@/config/Hero';
 import { parseTemplate } from '@/lib/hero';
-import { cn } from '@/lib/utils';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
@@ -18,7 +16,7 @@ const buttonIcons = {
 };
 
 export default function Hero() {
-  const { name, title, avatar, skills, description, buttons } = heroConfig;
+  const { name, title, skills, description, buttons } = heroConfig;
 
   const renderDescription = () => {
     const parts = parseTemplate(description.template, skills);
@@ -51,19 +49,16 @@ export default function Hero() {
 
   return (
     <Container className="mx-auto max-w-5xl">
-      {/* Image */}
-      <Image
-        src={avatar}
-        alt="hero"
-        width={100}
-        height={100}
-        className="cyber-glow size-24 rounded-full border border-red-700/70 bg-red-950"
+      {/* Avatar */}
+      <div
+        aria-label="profile avatar"
+        className="size-24 rounded-full bg-red-600"
       />
 
       {/* Text Area */}
       <div className="mt-8 flex flex-col gap-3">
         <h1 className="text-3xl leading-tight font-bold md:text-5xl">
-          Hi, I&apos;m {name} — <span className="text-secondary">{title}</span>
+          {name} — <span className="text-secondary">{title}</span>
         </h1>
 
         <div className="text-secondary mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap md:text-lg">
@@ -80,12 +75,6 @@ export default function Hero() {
             <Button
               key={index}
               variant={button.variant as 'outline' | 'default'}
-              className={cn(
-                button.variant === 'outline' &&
-                  'border-red-800/80 bg-black/40 hover:bg-red-950/70',
-                button.variant === 'default' &&
-                  'bg-red-800/90 text-white hover:bg-red-700',
-              )}
             >
               {IconComponent && <IconComponent />}
               <Link href={button.href}>{button.text}</Link>
