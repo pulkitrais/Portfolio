@@ -27,18 +27,16 @@ import Github from '@/components/svgs/Github';
 import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
 import AWS from '@/components/technologies/AWS';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import ReactIcon from '@/components/technologies/ReactIcon';
+import Postman from '@/components/technologies/Postman';
 import TypeScript from '@/components/technologies/TypeScript';
 
 // Component mapping for skills
 export const skillComponents = {
   TypeScript: TypeScript,
-  ReactIcon: ReactIcon,
-  NextJs: NextJs,
   NodeJs: NodeJs,
   AWS: AWS,
+  Postman: Postman,
 };
 
 export const heroConfig = {
@@ -50,36 +48,31 @@ export const heroConfig = {
   // Skills Configuration
   skills: [
     {
-      name: 'AWS Security',
-      href: 'https://aws.amazon.com/security/',
+      name: 'Azure Sentinel',
+      href: 'https://learn.microsoft.com/en-us/azure/sentinel/',
       component: 'AWS',
     },
     {
-      name: 'TypeScript Automation',
-      href: 'https://www.typescriptlang.org/',
+      name: 'KQL Detections',
+      href: 'https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/',
       component: 'TypeScript',
     },
     {
-      name: 'Next.js Security Dashboards',
-      href: 'https://nextjs.org/',
-      component: 'NextJs',
+      name: 'SOAR Playbooks',
+      href: 'https://learn.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook',
+      component: 'Postman',
     },
     {
-      name: 'Node.js Security Automation',
+      name: 'Incident Automation',
       href: 'https://nodejs.org/',
       component: 'NodeJs',
-    },
-    {
-      name: 'React Dashboards',
-      href: 'https://react.dev/',
-      component: 'ReactIcon',
     },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I design and defend modern systems with {skills:0}, {skills:1}, {skills:2}, {skills:3}, and {skills:4}. Focused on <b>resilience</b>, <b>detection engineering</b>, and human-first security outcomes.',
+      'Focused on {skills:0}, {skills:1}, {skills:2}, and {skills:3}. I build practical blue-team workflows for <b>detection engineering</b>, <b>incident response</b>, and <b>security operations</b>.',
   },
 
   // Buttons Configuration

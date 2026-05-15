@@ -1,6 +1,5 @@
 import { navbarConfig } from '@/config/Navbar';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 import React from 'react';
 
 import Container from './Container';
@@ -11,14 +10,11 @@ export default function Navbar() {
     <Container className="sticky top-0 z-20 rounded-md py-4 backdrop-blur-sm">
       <div className="flex items-center justify-between px-6">
         <div className="flex items-baseline gap-4">
-          <Link href="/">
-            <Image
-              className="cyber-glow h-12 w-12 rounded-md border border-red-900/80 bg-red-950 transition-all duration-300 ease-in-out hover:scale-95"
-              src={navbarConfig.logo.src}
-              alt={navbarConfig.logo.alt}
-              width={navbarConfig.logo.width}
-              height={navbarConfig.logo.height}
-            />
+          <Link href="/" className="flex items-center gap-3">
+            <span className="inline-block size-6 rounded-full bg-red-600" />
+            <span className="text-sm font-semibold">
+              {navbarConfig.logo.alt}
+            </span>
           </Link>
           <div className="flex items-center justify-center gap-4">
             {navbarConfig.navItems.map((item) => (

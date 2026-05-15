@@ -1,19 +1,17 @@
 import AWS from '@/components/technologies/AWS';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import ReactIcon from '@/components/technologies/ReactIcon';
+import Postman from '@/components/technologies/Postman';
 import TypeScript from '@/components/technologies/TypeScript';
 
 export const mySkills = [
   <AWS key="aws" />,
   <TypeScript key="typescript" />,
-  <NextJs key="nextjs" />,
   <NodeJs key="nodejs" />,
-  <ReactIcon key="react" />,
+  <Postman key="postman" />,
 ];
 
 export const about = {
   name: 'Pulkit Rai',
   description:
-    "I'm a Cybersecurity Engineer & SOC Analyst focused on detection engineering, incident response, and secure cloud architecture. I build practical security systems that reduce risk and improve operational readiness.",
+    'B.Tech in Cyber Security & Digital Forensics at Galgotias University (2022–2026, expected). I focus on SOC operations, incident response, threat hunting, and defensive security automation aligned with real-world blue-team workflows.',
 };

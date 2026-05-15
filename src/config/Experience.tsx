@@ -1,5 +1,4 @@
 import AWS from '@/components/technologies/AWS';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import Postman from '@/components/technologies/Postman';
 import TypeScript from '@/components/technologies/TypeScript';
@@ -31,37 +30,39 @@ export const experiences: Experience[] = [
   {
     isCurrent: true,
     isBlur: false,
-    company: 'Independent Security Lab',
-    position: 'Cybersecurity Engineer & SOC Analyst',
-    location: 'Remote',
+    company: 'Azure Sentinel SIEM + SOAR Implementation Lab',
+    position: 'Hands-on Security Operations & Automation',
+    location: 'India',
     image: '/company/promote.png',
     description: [
-      'Designed and maintained a SOC lab on Azure with curated detections, alert correlation, and triage workflows.',
-      'Built repeatable incident response playbooks to improve containment time and investigation quality.',
-      'Implemented telemetry-driven dashboards and log pipelines for proactive threat monitoring.',
-      'Improved security posture through threat modeling, control validation, and attack-surface reduction.',
+      'Architected and deployed a production-grade Microsoft Sentinel SIEM + SOAR environment for real-time threat detection and automated response.',
+      'Engineered advanced KQL analytics rules including brute-force detection with high-fidelity alerting.',
+      'Developed and integrated custom Logic Apps playbooks triggered via Automation Rules for account, source IP, host, and timestamp enrichment.',
+      'Configured enterprise logging infrastructure using Azure Monitor Agent, custom DCRs, Syslog, and system logs.',
+      'Implemented full SOC workflow: log ingestion → real-time KQL detection → incident creation → automated SOAR response.',
+      'Conducted extensive testing, tuning, and documentation of detection rules, playbooks, and runbooks for production readiness.',
     ],
-    startDate: 'January 2025',
+    startDate: 'May 2026',
     endDate: 'Present',
     technologies: [
       {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
+        name: 'Azure Sentinel',
+        href: 'https://learn.microsoft.com/en-us/azure/sentinel/',
         icon: <AWS />,
       },
       {
-        name: 'TypeScript',
-        href: 'https://typescriptlang.org/',
+        name: 'KQL',
+        href: 'https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/',
         icon: <TypeScript />,
       },
       {
-        name: 'Node.js',
-        href: 'https://nodejs.org/',
+        name: 'SOAR Playbooks',
+        href: 'https://learn.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook',
         icon: <NodeJs />,
       },
       {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
+        name: 'Azure Monitor Agent',
+        href: 'https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview',
         icon: <Postman />,
       },
     ],
@@ -69,32 +70,32 @@ export const experiences: Experience[] = [
   },
   {
     isCurrent: false,
-    company: 'Research & Security Engineering',
-    position: 'Cybersecurity Researcher',
+    company: 'Independent SOC Operations & Blue Team Projects',
+    position: 'Defensive Security & Automation',
     location: 'India',
     image: '/company/upsurge.png',
     description: [
-      'Authored a human-centric cybersecurity thesis focused on secure behavior design and user-aware controls.',
-      'Evaluated common security friction points and proposed practical, measurable mitigation strategies.',
-      'Mapped defense controls to realistic attacker workflows for stronger operational readiness.',
-      'Translated research findings into implementation checklists for secure product teams.',
+      'Completed TryHackMe premium defensive security path with advanced modules in alert triage, threat hunting, incident response, and purple-team simulations.',
+      'Developed multiple Python-based automation frameworks for log parsing, behavioral anomaly detection, phishing email analysis, and security orchestration.',
+      'Built and maintained client-side security tools focused on digital forensics, malware analysis support, and OSINT collection for threat intelligence.',
+      'Performed regular threat-hunting exercises using MITRE ATT&CK framework and custom detection logic across simulated environments.',
     ],
-    startDate: 'June 2024',
-    endDate: 'December 2024',
+    startDate: '2023',
+    endDate: 'Present',
     technologies: [
       {
-        name: 'TypeScript',
+        name: 'Threat Hunting',
         href: 'https://www.typescriptlang.org/',
         icon: <TypeScript />,
       },
       {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
+        name: 'Automation',
+        href: 'https://nodejs.org/',
+        icon: <NodeJs />,
       },
       {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
+        name: 'MITRE ATT&CK',
+        href: 'https://attack.mitre.org/',
         icon: <Postman />,
       },
     ],

@@ -1,5 +1,4 @@
 import { about, mySkills } from '@/config/About';
-import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
@@ -12,12 +11,9 @@ export default function About() {
       <SectionHeading subHeading="About" heading="Me" />
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row md:gap-8">
-        <Image
-          src="/assets/logo.png"
-          alt="About"
-          width={100}
-          height={100}
-          className="cyber-glow border-secondary size-52 rounded-md border-2 border-red-900/80 bg-red-950 object-cover md:size-60"
+        <div
+          aria-label="profile avatar"
+          className="size-52 shrink-0 rounded-full bg-red-600 md:size-60"
         />
         <div className="mt-4">
           <h3 className="text-2xl font-bold">{about.name}</h3>
