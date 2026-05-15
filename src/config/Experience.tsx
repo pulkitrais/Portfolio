@@ -85,11 +85,11 @@ export const experiences: Experience[] = [
     technologies: [
       {
         name: 'Threat Hunting',
-        href: 'https://www.typescriptlang.org/',
+        href: 'https://attack.mitre.org/resources/getting-started/',
         icon: <TypeScript />,
       },
       {
-        name: 'Automation',
+        name: 'Node.js Automation',
         href: 'https://nodejs.org/',
         icon: <NodeJs />,
       },
