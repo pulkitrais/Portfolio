@@ -50,27 +50,27 @@ export const heroConfig = {
   // Skills Configuration
   skills: [
     {
-      name: 'Cloud SIEM on AWS',
+      name: 'AWS Security',
       href: 'https://aws.amazon.com/security/',
       component: 'AWS',
     },
     {
-      name: 'TypeScript Security Automation',
+      name: 'TypeScript Automation',
       href: 'https://www.typescriptlang.org/',
       component: 'TypeScript',
     },
     {
-      name: 'Cloud Security',
-      href: 'https://learn.microsoft.com/en-us/azure/security/',
+      name: 'Next.js Security Dashboards',
+      href: 'https://nextjs.org/',
       component: 'NextJs',
     },
     {
-      name: 'Automation',
+      name: 'Node.js Security Automation',
       href: 'https://nodejs.org/',
       component: 'NodeJs',
     },
     {
-      name: 'React SOC Dashboards',
+      name: 'React Dashboards',
       href: 'https://react.dev/',
       component: 'ReactIcon',
     },

@@ -30,6 +30,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
+    isBlur: false,
     company: 'Independent Security Lab',
     position: 'Cybersecurity Engineer & SOC Analyst',
     location: 'Remote',
