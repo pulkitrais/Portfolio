@@ -11,9 +11,9 @@ export const ctaConfig = {
   profileAlt: 'Profile',
 
   // CTA button settings
-  linkText: 'Book a Free Call',
-  calLink: 'ramxcodes/meeting',
+  linkText: 'Book a Security Consultation',
+  calLink: 'pulkitrais/meeting',
 
   // Pre-text message
-  preText: "Hey, you scrolled this far, let's talk.",
+  preText: "Need a resilient security strategy? Let's connect.",
 };

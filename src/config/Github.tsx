@@ -6,12 +6,12 @@
  */
 
 export const githubConfig = {
-  username: 'ramxcodes',
+  username: 'pulkitrais',
   apiUrl: 'https://github-contributions-api.deno.dev',
 
   // Display settings
   title: 'GitHub Activity',
-  subtitle: 'coding journey over the past year',
+  subtitle: 'security-focused commits over the past year',
 
   // Chart settings
   blockSize: 11,
@@ -44,18 +44,18 @@ export const githubConfig = {
   // Theme configuration for dark and light modes
   theme: {
     dark: [
-      'rgb(22, 27, 34)', // Very dark for no contributions
-      'rgb(14, 68, 41)', // Dark green
-      'rgb(0, 109, 50)', // Medium green
-      'rgb(38, 166, 65)', // Bright green
-      'rgb(57, 211, 83)', // Very bright green
+      'rgb(12, 6, 8)',
+      'rgb(58, 8, 18)',
+      'rgb(102, 8, 32)',
+      'rgb(155, 16, 48)',
+      'rgb(224, 32, 76)',
     ],
     light: [
-      'rgb(235, 237, 240)', // Light gray
-      'rgb(155, 233, 168)', // Light green
-      'rgb(64, 196, 99)', // Medium green
-      'rgb(48, 161, 78)', // Dark green
-      'rgb(33, 110, 57)', // Very dark green
+      'rgb(245, 236, 238)',
+      'rgb(236, 197, 207)',
+      'rgb(214, 132, 152)',
+      'rgb(182, 76, 108)',
+      'rgb(128, 28, 56)',
     ],
   },
 

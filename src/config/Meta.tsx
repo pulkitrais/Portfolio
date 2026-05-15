@@ -12,110 +12,102 @@ export interface PageMeta {
 // Base site configuration
 export const siteConfig = {
   name: heroConfig.name,
-  title: 'Sleek Portfolio',
-  description: 'Sleek Portfolio Template by @Ramxcodes',
+  title: 'Pulkit Rai | Cybersecurity Portfolio',
+  description: 'Premium cybersecurity portfolio by Pulkit Rai',
   url: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
   ogImage: '/meta/opengraph-image.png',
   author: {
     name: about.name,
-    twitter: '@ramxcodes',
-    github: 'ramxcodes',
-    linkedin: 'ramxcodes',
-    email: 'ramxcodes@gmail.com',
+    twitter: '@pulkitrais',
+    github: 'pulkitrais',
+    email: 'pulkitonwork@gmail.com',
   },
   keywords: [
     'portfolio',
-    'developer',
-    'full-stack',
-    'react',
-    'nextjs',
-    'typescript',
-    'web development',
+    'cybersecurity',
+    'soc analyst',
+    'security engineer',
+    'threat detection',
+    'cloud security',
     heroConfig.name.toLowerCase(),
   ],
 };
 
 export const pageMetadata: Record<string, PageMeta> = {
-  // Home page
   '/': {
     title: `${heroConfig.name} - ${heroConfig.title}`,
-    description: `${about.description} Explore my projects, experience, and technical expertise.`,
+    description: `${about.description} Explore my cybersecurity projects, SOC initiatives, and security engineering expertise.`,
     keywords: [
-      'portfolio',
-      'developer',
-      'full-stack',
-      'web development',
-      'projects',
+      'cybersecurity portfolio',
+      'soc analyst',
+      'security engineer',
+      'threat hunting',
+      'incident response',
     ],
     ogImage: '/meta/hero.png',
     twitterCard: 'summary_large_image',
   },
 
-  // Contact page
   '/contact': {
-    title: 'Contact - Get in Touch',
+    title: 'Contact - Security Collaboration',
     description:
-      "Get in touch with me for collaborations, projects, or opportunities. I'd love to hear from you!",
-    keywords: ['contact', 'hire', 'collaboration', 'freelance', 'developer'],
+      'Get in touch for cybersecurity consulting, SOC engineering, and security-focused collaborations.',
+    keywords: ['contact', 'cybersecurity', 'consulting', 'soc', 'security'],
     ogImage: '/assets/logo.png',
     twitterCard: 'summary',
   },
 
-  // Work Experience page
   '/work-experience': {
-    title: 'Work Experience - Professional Journey',
+    title: 'Work Experience - Security Journey',
     description:
-      'Explore my professional work experience across different companies and roles in software development.',
+      'Explore my professional journey across cybersecurity, SOC operations, and defensive engineering.',
     keywords: [
       'work experience',
-      'career',
-      'professional',
-      'software developer',
+      'cybersecurity career',
+      'soc operations',
+      'security engineering',
       'employment history',
     ],
     ogImage: '/meta/work.png',
     twitterCard: 'summary_large_image',
   },
 
-  // Projects page
   '/projects': {
-    title: 'Projects - My Work & Projects Portfolio',
+    title: 'Projects - Security Labs & Platforms',
     description:
-      'Discover my projects and work across different technologies and domains. From web apps to mobile solutions.',
+      'Discover my cybersecurity projects, lab implementations, and secure platform engineering work.',
     keywords: [
-      'projects',
+      'security projects',
+      'soc lab',
+      'azure sentinel',
+      'secure platform',
       'portfolio',
-      'web development',
-      'applications',
-      'software',
     ],
     ogImage: '/meta/projects.png',
     twitterCard: 'summary_large_image',
   },
 
-  // Blog page
   '/blog': {
-    title: 'Blog - Thoughts & Tutorials',
+    title: 'Blog - Cybersecurity Insights',
     description:
-      'Read my thoughts, tutorials, and insights on engineering, programming, and web development.',
+      'Read my thoughts and technical insights on cybersecurity engineering and SOC operations.',
     keywords: [
-      'blog',
-      'tutorials',
-      'programming',
-      'web development',
+      'cybersecurity blog',
+      'security insights',
+      'detection engineering',
+      'incident response',
       'technical writing',
     ],
     ogImage: '/meta/blogs.png',
     twitterCard: 'summary_large_image',
   },
 
-  // Resume page
   '/resume': {
-    title: 'Resume - Professional CV',
-    description: `View and download ${heroConfig.name}'s professional resume and CV. Technical skills, experience, and qualifications.`,
+    title: 'Resume - Cybersecurity CV',
+    description: `View and download ${heroConfig.name}'s cybersecurity resume and CV. Skills, experience, and impact.`,
     keywords: [
       'resume',
-      'cv',
+      'cybersecurity cv',
       'professional',
       'skills',
       'qualifications',
@@ -125,31 +117,29 @@ export const pageMetadata: Record<string, PageMeta> = {
     twitterCard: 'summary',
   },
 
-  // Gears page
   '/gears': {
-    title: 'Gears - My Setup & Tools',
+    title: 'Gears - Security Stack & Tools',
     description:
-      'Discover the tools, devices, and software I use to get my work done efficiently.',
+      'Discover the devices, tools, and workflow setup I use for cybersecurity engineering.',
     keywords: [
-      'setup',
+      'security setup',
       'tools',
       'devices',
       'software',
       'productivity',
-      'development environment',
+      'cybersecurity environment',
     ],
     ogImage: '/meta/gears.png',
     twitterCard: 'summary_large_image',
   },
 
-  // Setup page
   '/setup': {
-    title: 'Setup Guide - VS Code Configuration',
+    title: 'Setup Guide - Security-focused Workspace',
     description:
-      'Complete guide to setting up VS Code with my preferred configuration, extensions, and fonts for optimal development.',
+      'Complete guide to my coding and security workspace setup, extensions, and productive defaults.',
     keywords: [
       'vscode',
-      'setup',
+      'security setup',
       'configuration',
       'extensions',
       'development environment',
