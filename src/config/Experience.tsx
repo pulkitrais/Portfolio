@@ -80,7 +80,7 @@ export const experiences: Experience[] = [
       'Built and maintained client-side security tools focused on digital forensics, malware analysis support, and OSINT collection for threat intelligence.',
       'Performed regular threat-hunting exercises using MITRE ATT&CK framework and custom detection logic across simulated environments.',
     ],
-    startDate: '2023',
+    startDate: 'January 2023',
     endDate: 'Present',
     technologies: [
       {
