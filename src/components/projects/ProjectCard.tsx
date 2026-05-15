@@ -31,11 +31,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
   return (
-    <Card className="group h-full w-full overflow-hidden border-gray-100 p-0 shadow-none transition-all dark:border-gray-800">
+    <Card className="group h-full w-full overflow-hidden border-red-900/70 bg-black/40 p-0 shadow-none transition-all hover:border-red-600/70 hover:shadow-[0_0_28px_rgba(180,20,60,0.25)]">
       <CardHeader className="p-0">
         <div className="group relative aspect-video overflow-hidden">
           <Image
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             src={project.image}
             alt={project.title}
             width={1920}

@@ -24,18 +24,12 @@
  * That's it! Your portfolio will automatically update with your information.
  */
 import Github from '@/components/svgs/Github';
-import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
-import Bun from '@/components/technologies/Bun';
-import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
+import AWS from '@/components/technologies/AWS';
 import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-// Technology Components
 import TypeScript from '@/components/technologies/TypeScript';
 
 // Component mapping for skills
@@ -43,53 +37,49 @@ export const skillComponents = {
   TypeScript: TypeScript,
   ReactIcon: ReactIcon,
   NextJs: NextJs,
-  Bun: Bun,
-  PostgreSQL: PostgreSQL,
   NodeJs: NodeJs,
-  MongoDB: MongoDB,
-  Prisma: Prisma,
-  JavaScript: JavaScript,
+  AWS: AWS,
 };
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
-  title: 'A Full Stack web developer.',
+  name: 'Pulkit Rai',
+  title: 'Cybersecurity Engineer & SOC Analyst',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
   skills: [
     {
-      name: 'Typescript',
+      name: 'AWS Security',
+      href: 'https://aws.amazon.com/security/',
+      component: 'AWS',
+    },
+    {
+      name: 'TypeScript Automation',
       href: 'https://www.typescriptlang.org/',
       component: 'TypeScript',
     },
     {
-      name: 'React',
-      href: 'https://react.dev/',
-      component: 'ReactIcon',
-    },
-    {
-      name: 'Next.js',
+      name: 'Next.js Security Dashboards',
       href: 'https://nextjs.org/',
       component: 'NextJs',
     },
     {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'Node.js Security Automation',
+      href: 'https://nodejs.org/',
+      component: 'NodeJs',
     },
     {
-      name: 'PostgreSQL',
-      href: 'https://www.postgresql.org/',
-      component: 'PostgreSQL',
+      name: 'React Dashboards',
+      href: 'https://react.dev/',
+      component: 'ReactIcon',
     },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'I design and defend modern systems with {skills:0}, {skills:1}, {skills:2}, {skills:3}, and {skills:4}. Focused on <b>resilience</b>, <b>detection engineering</b>, and human-first security outcomes.',
   },
 
   // Buttons Configuration
@@ -113,22 +103,17 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/pulkitrais',
     icon: <X />,
   },
   {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
-    icon: <LinkedIn />,
-  },
-  {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/pulkitrais',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:pulkitonwork@gmail.com',
     icon: <Mail />,
   },
 ];

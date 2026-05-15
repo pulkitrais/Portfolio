@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-baseline gap-4">
           <Link href="/">
             <Image
-              className="h-12 w-12 rounded-md border border-gray-200 bg-blue-300 transition-all duration-300 ease-in-out hover:scale-90 dark:bg-yellow-300"
+              className="cyber-glow h-12 w-12 rounded-md border border-red-900/80 bg-red-950 transition-all duration-300 ease-in-out hover:scale-95"
               src={navbarConfig.logo.src}
               alt={navbarConfig.logo.alt}
               width={navbarConfig.logo.width}

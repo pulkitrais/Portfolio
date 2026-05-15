@@ -57,22 +57,22 @@ export default function Hero() {
         alt="hero"
         width={100}
         height={100}
-        className="size-24 rounded-full bg-blue-300 dark:bg-yellow-300"
+        className="cyber-glow size-24 rounded-full border border-red-700/70 bg-red-950"
       />
 
       {/* Text Area */}
-      <div className="mt-8 flex flex-col gap-2">
-        <h1 className="text-4xl font-bold">
+      <div className="mt-8 flex flex-col gap-3">
+        <h1 className="text-3xl leading-tight font-bold md:text-5xl">
           Hi, I&apos;m {name} — <span className="text-secondary">{title}</span>
         </h1>
 
-        <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap text-neutral-500 md:text-lg">
+        <div className="text-secondary mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap md:text-lg">
           {renderDescription()}
         </div>
       </div>
 
       {/* Buttons */}
-      <div className="mt-8 flex gap-4">
+      <div className="mt-8 flex flex-wrap gap-4">
         {buttons.map((button, index) => {
           const IconComponent =
             buttonIcons[button.icon as keyof typeof buttonIcons];
@@ -81,8 +81,10 @@ export default function Hero() {
               key={index}
               variant={button.variant as 'outline' | 'default'}
               className={cn(
-                button.variant === 'outline' && 'inset-shadow-indigo-500',
-                button.variant === 'default' && 'inset-shadow-indigo-500',
+                button.variant === 'outline' &&
+                  'border-red-800/80 bg-black/40 hover:bg-red-950/70',
+                button.variant === 'default' &&
+                  'bg-red-800/90 text-white hover:bg-red-700',
               )}
             >
               {IconComponent && <IconComponent />}
