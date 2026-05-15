@@ -51,7 +51,7 @@ export const heroConfig = {
   skills: [
     {
       name: 'SIEM Engineering',
-      href: 'https://learn.microsoft.com/en-us/azure/sentinel/',
+      href: 'https://aws.amazon.com/security/',
       component: 'AWS',
     },
     {

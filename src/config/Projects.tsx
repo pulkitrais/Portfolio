@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: '/project/notesbuddy.png',
     link: 'https://github.com/pulkitrais',
     technologies: [
-      { name: 'AWS', icon: <AWS key="aws" /> },
+      { name: 'Azure', icon: <AWS key="aws" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
     ],
