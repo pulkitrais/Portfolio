@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: '/project/notesbuddy.png',
     link: 'https://github.com/pulkitrais',
     technologies: [
-      { name: 'Azure', icon: <AWS key="aws" /> },
+      { name: 'Cloud SIEM', icon: <AWS key="aws" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
     ],
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     title: 'Cachedrive',
     description:
-      'Implemented a secure file and cache service architecture with policy controls, telemetry hooks, and reliability-focused data handling.',
+      'Implemented a secure file and cache service architecture on AWS with policy controls, telemetry hooks, and reliability-focused data handling.',
     image: '/project/festx.png',
     link: 'https://github.com/pulkitrais',
     technologies: [

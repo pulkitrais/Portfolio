@@ -50,13 +50,13 @@ export const heroConfig = {
   // Skills Configuration
   skills: [
     {
-      name: 'SIEM Engineering',
+      name: 'Cloud SIEM on AWS',
       href: 'https://aws.amazon.com/security/',
       component: 'AWS',
     },
     {
-      name: 'Threat Detection',
-      href: 'https://owasp.org/',
+      name: 'TypeScript Security Automation',
+      href: 'https://www.typescriptlang.org/',
       component: 'TypeScript',
     },
     {
@@ -70,7 +70,7 @@ export const heroConfig = {
       component: 'NodeJs',
     },
     {
-      name: 'Incident Response',
+      name: 'React SOC Dashboards',
       href: 'https://react.dev/',
       component: 'ReactIcon',
     },
