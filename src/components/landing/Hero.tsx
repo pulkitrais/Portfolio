@@ -1,15 +1,34 @@
 import { heroConfig, socialLinks } from '@/config/Hero';
-import { Pencil } from 'lucide-react';
-import { Link } from 'next-view-transitions';
+import {
+  Github,
+  Instagram,
+  Linkedin,
+  Pencil,
+  Twitter,
+  Youtube,
+} from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
 import Spotify from '../svgs/Spotify';
-import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
+
+const socialIcons = {
+  X: Twitter,
+  LinkedIn: Linkedin,
+  GitHub: Github,
+  YouTube: Youtube,
+  Instagram: Instagram,
+};
 
 export default function Hero() {
   const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
+  const visibleSocialLinks = socialLinks.filter(
+    (link) =>
+      link.href &&
+      !link.href.includes('YOUR_USERNAME') &&
+      !link.href.toLowerCase().includes('paste your link'),
+  );
 
   return (
     <Container className="pt-8">
@@ -57,22 +76,24 @@ export default function Hero() {
       </div>
 
       {/* Social Icons */}
-      <div className="mt-4 flex gap-3">
-        {socialLinks.map((link) => (
-          <Tooltip key={link.name} delayDuration={0}>
-            <TooltipTrigger asChild>
-              <Link
-                href={link.href}
-                className="text-zinc-500 transition-colors hover:text-zinc-200"
-              >
-                <span className="size-5">{link.icon}</span>
-              </Link>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{link.name}</p>
-            </TooltipContent>
-          </Tooltip>
-        ))}
+      <div className="mt-5 mb-2 flex items-center gap-[18px]">
+        {visibleSocialLinks.map((link) => {
+          const Icon = socialIcons[link.name as keyof typeof socialIcons];
+          if (!Icon) return null;
+
+          return (
+            <a
+              key={link.name}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.name === 'X' ? 'X (Twitter)' : link.name}
+              className="text-[#a1a1aa] transition-colors duration-200 hover:text-white"
+            >
+              <Icon className="size-5" strokeWidth={1.75} aria-hidden="true" />
+            </a>
+          );
+        })}
       </div>
     </Container>
   );
