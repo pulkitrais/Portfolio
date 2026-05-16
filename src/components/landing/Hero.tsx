@@ -1,83 +1,68 @@
-import { heroConfig, skillComponents, socialLinks } from '@/config/Hero';
-import { parseTemplate } from '@/lib/hero';
+import { heroConfig, socialLinks } from '@/config/Hero';
+import { Pencil } from 'lucide-react';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
-import Skill from '../common/Skill';
-import AppleMusic from '../svgs/AppleMusic';
+import Spotify from '../svgs/Spotify';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function Hero() {
-  const {
-    name,
-    title,
-    skills,
-    description,
-    avatar,
-    lastPlayed,
-    featuredSkillsCount,
-  } = heroConfig;
-
-  const renderDescription = () => {
-    const parts = parseTemplate(description.template, skills);
-
-    return parts.map((part) => {
-      if (part.type === 'skill' && 'skill' in part && part.skill) {
-        const SkillComponent =
-          skillComponents[part.skill.component as keyof typeof skillComponents];
-        return (
-          <Skill key={part.key} name={part.skill.name} href={part.skill.href}>
-            <SkillComponent />
-          </Skill>
-        );
-      } else if (part.type === 'bold' && 'text' in part) {
-        return (
-          <b key={part.key} className="text-primary whitespace-pre-wrap">
-            {part.text}
-          </b>
-        );
-      } else if (part.type === 'text' && 'text' in part) {
-        return (
-          <span key={part.key} className="whitespace-pre-wrap">
-            {part.text}
-          </span>
-        );
-      }
-      return null;
-    });
-  };
+  const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
 
   return (
     <Container className="pt-8">
+      {/* Avatar + Name / Subtitle */}
       <div className="flex items-start gap-4">
-        <Image
-          src={avatar}
-          alt={name}
-          width={72}
-          height={72}
-          className="rounded-full border border-zinc-700 object-cover"
-        />
+        {/* Avatar with bright yellow circular background */}
+        <div className="flex-shrink-0 rounded-full bg-yellow-400 p-1.5">
+          <Image
+            src={avatar}
+            alt={name}
+            width={68}
+            height={68}
+            className="rounded-full object-cover"
+          />
+        </div>
+
         <div>
-          <h1 className="text-4xl leading-tight font-semibold text-zinc-100">
+          <h1 className="text-4xl leading-tight font-bold text-zinc-100">
             {name}
           </h1>
-          <p className="mt-1 text-lg text-zinc-400">{title}</p>
+          <p className="mt-1 flex items-center gap-1 text-sm text-zinc-400">
+            {title}&nbsp;·&nbsp;
+            <a
+              href={`mailto:${email}`}
+              className="transition-colors hover:text-zinc-200"
+            >
+              {email}
+            </a>
+            <Pencil className="size-3 text-zinc-600" />
+          </p>
         </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap text-zinc-400">
-        {renderDescription()}
+      {/* Short bio */}
+      <p className="mt-6 text-base leading-relaxed text-zinc-400">{bio}</p>
+
+      {/* Last Played – minimal */}
+      <div className="mt-4 flex items-center gap-2 text-sm text-zinc-400">
+        <span className="text-green-500">
+          <Spotify className="size-4" />
+        </span>
+        <span>Last played</span>
+        <span>—</span>
+        <span className="text-zinc-300">{lastPlayed}</span>
       </div>
 
-      <div className="mt-6 flex gap-3">
+      {/* Social Icons */}
+      <div className="mt-4 flex gap-3">
         {socialLinks.map((link) => (
           <Tooltip key={link.name} delayDuration={0}>
             <TooltipTrigger asChild>
               <Link
                 href={link.href}
-                key={link.name}
                 className="text-zinc-500 transition-colors hover:text-zinc-200"
               >
                 <span className="size-5">{link.icon}</span>
@@ -88,25 +73,6 @@ export default function Hero() {
             </TooltipContent>
           </Tooltip>
         ))}
-      </div>
-
-      <div className="mt-10 flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
-        <span className="text-zinc-300">
-          <AppleMusic />
-        </span>
-        <span className="font-medium text-zinc-300">Last played</span> —{' '}
-        {lastPlayed}
-      </div>
-      <div className="mt-2 flex flex-wrap gap-2">
-        {skills.slice(0, featuredSkillsCount).map((skill) => {
-          const SkillComponent =
-            skillComponents[skill.component as keyof typeof skillComponents];
-          return (
-            <Skill key={skill.name} name={skill.name} href={skill.href}>
-              <SkillComponent />
-            </Skill>
-          );
-        })}
       </div>
     </Container>
   );

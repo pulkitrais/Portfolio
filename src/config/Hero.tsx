@@ -44,9 +44,13 @@ export const heroConfig = {
   // Personal Information
   name: 'Pulkit Rai',
   title: 'Cybersecurity Engineer & SOC Analyst',
+  email: 'pulkitonwork@gmail.com',
   avatar: '/assets/logo.png',
 
-  // Skills Configuration
+  // Short bio shown below the header
+  bio: 'Focused on building practical blue-team workflows for detection engineering, incident response, and security operations.',
+
+  // Skills Configuration (kept for full work-experience page use)
   skills: [
     {
       name: 'Azure Sentinel',
@@ -70,7 +74,7 @@ export const heroConfig = {
     },
   ],
 
-  // Description Configuration
+  // Description Configuration (kept for compatibility)
   description: {
     template:
       'Focused on {skills:0}, {skills:1}, {skills:2}, and {skills:3}. I build practical blue-team workflows for <b>detection engineering</b>, <b>incident response</b>, and <b>security operations</b>.',
