@@ -23,7 +23,6 @@ const socialIcons = {
 
 export default function Hero() {
   const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
-  const visibleSocialLinks = socialLinks.filter((link) => link.href);
 
   return (
     <Container className="pt-8">
@@ -72,7 +71,7 @@ export default function Hero() {
 
       {/* Social Icons */}
       <div className="mt-5 mb-2 flex items-center gap-[18px]">
-        {visibleSocialLinks.map((link) => {
+        {socialLinks.map((link) => {
           const Icon = socialIcons[link.name as keyof typeof socialIcons];
           if (!Icon) return null;
 
