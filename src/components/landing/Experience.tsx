@@ -9,7 +9,7 @@ import { Button } from '../ui/button';
 
 export default function Experience() {
   return (
-    <Container className="mt-20">
+    <Container className="mt-16 sm:mt-20 md:mt-24">
       <SectionHeading subHeading="Featured" heading="Experience" />
       <div className="mt-4 flex flex-col gap-8">
         {experiences.slice(0, 2).map((experience: Experience) => (

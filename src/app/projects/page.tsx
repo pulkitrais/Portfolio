@@ -30,7 +30,8 @@ export default function ProjectsPage() {
             Projects
           </h1>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-            My projects and work across different technologies and domains.
+            Security-focused labs, forensic utilities, and defensive engineering
+            work.
           </p>
         </div>
 

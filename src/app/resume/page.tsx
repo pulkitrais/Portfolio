@@ -29,15 +29,16 @@ export default function ResumePage() {
             Resume
           </h1>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-            My resume.
+            My cybersecurity resume and experience summary.
           </p>
         </div>
         <Separator />
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto w-full max-w-5xl">
           <iframe
             src={resumeConfig.url}
-            className="min-h-screen w-full"
-          ></iframe>
+            title="Pulkit Rai resume"
+            className="bg-background min-h-[70vh] w-full rounded-2xl border border-black/10 shadow-sm md:min-h-[85vh] dark:border-white/10"
+          />
         </div>
       </div>
     </Container>

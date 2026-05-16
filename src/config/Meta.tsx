@@ -86,22 +86,6 @@ export const pageMetadata: Record<string, PageMeta> = {
     ogImage: '/meta/projects.png',
     twitterCard: 'summary_large_image',
   },
-
-  '/blog': {
-    title: 'Blog - Cybersecurity Insights',
-    description:
-      'Read my thoughts and technical insights on cybersecurity engineering and SOC operations.',
-    keywords: [
-      'cybersecurity blog',
-      'security insights',
-      'detection engineering',
-      'incident response',
-      'technical writing',
-    ],
-    ogImage: '/meta/blogs.png',
-    twitterCard: 'summary_large_image',
-  },
-
   '/resume': {
     title: 'Resume - Cybersecurity CV',
     description: `View and download ${heroConfig.name}'s cybersecurity resume and CV. Skills, experience, and impact.`,
@@ -115,38 +99,6 @@ export const pageMetadata: Record<string, PageMeta> = {
     ],
     ogImage: '/meta/resume.png',
     twitterCard: 'summary',
-  },
-
-  '/gears': {
-    title: 'Gears - Security Stack & Tools',
-    description:
-      'Discover the devices, tools, and workflow setup I use for cybersecurity engineering.',
-    keywords: [
-      'security setup',
-      'tools',
-      'devices',
-      'software',
-      'productivity',
-      'cybersecurity environment',
-    ],
-    ogImage: '/meta/gears.png',
-    twitterCard: 'summary_large_image',
-  },
-
-  '/setup': {
-    title: 'Setup Guide - Security-focused Workspace',
-    description:
-      'Complete guide to my coding and security workspace setup, extensions, and productive defaults.',
-    keywords: [
-      'vscode',
-      'security setup',
-      'configuration',
-      'extensions',
-      'development environment',
-      'guide',
-    ],
-    ogImage: '/meta/setup.png',
-    twitterCard: 'summary_large_image',
   },
 };
 

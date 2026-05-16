@@ -1,6 +1,7 @@
 import { heroConfig, skillComponents, socialLinks } from '@/config/Hero';
 import { parseTemplate } from '@/lib/hero';
 import { Link } from 'next-view-transitions';
+import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
@@ -48,26 +49,27 @@ export default function Hero() {
   };
 
   return (
-    <Container className="mx-auto max-w-5xl">
-      {/* Avatar */}
-      <div
-        aria-label="profile avatar"
-        className="size-24 rounded-full bg-red-600"
+    <Container className="flex min-h-[calc(100vh-6rem)] flex-col justify-center py-8 sm:py-12 md:min-h-[calc(100vh-7rem)] md:py-16">
+      <Image
+        src={heroConfig.avatar}
+        alt={name}
+        width={160}
+        height={160}
+        className="size-20 rounded-full border border-black/10 object-cover shadow-sm sm:size-24 dark:border-white/10"
+        priority
       />
 
-      {/* Text Area */}
-      <div className="mt-8 flex flex-col gap-3">
-        <h1 className="text-3xl leading-tight font-bold md:text-5xl">
+      <div className="mt-6 flex max-w-4xl flex-col gap-3 sm:mt-8">
+        <h1 className="text-3xl leading-tight font-bold sm:text-4xl md:text-6xl">
           {name} — <span className="text-secondary">{title}</span>
         </h1>
 
-        <div className="text-secondary mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap md:text-lg">
+        <div className="text-secondary mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap md:text-xl">
           {renderDescription()}
         </div>
       </div>
 
-      {/* Buttons */}
-      <div className="mt-8 flex flex-wrap gap-4">
+      <div className="mt-8 flex flex-wrap gap-3 sm:gap-4">
         {buttons.map((button, index) => {
           const IconComponent =
             buttonIcons[button.icon as keyof typeof buttonIcons];
@@ -83,7 +85,6 @@ export default function Hero() {
         })}
       </div>
 
-      {/* Social Links */}
       <div className="mt-8 flex gap-2">
         {socialLinks.map((link) => (
           <Tooltip key={link.name} delayDuration={0}>
