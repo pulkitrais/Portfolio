@@ -6,6 +6,7 @@ import React from 'react';
 
 import Container from '../common/Container';
 import Skill from '../common/Skill';
+import AppleMusic from '../svgs/AppleMusic';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function Hero() {
@@ -89,7 +90,10 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
+      <div className="mt-10 flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
+        <span className="text-zinc-300">
+          <AppleMusic />
+        </span>
         <span className="font-medium text-zinc-300">Last played</span> —{' '}
         {lastPlayed}
       </div>
