@@ -91,10 +91,9 @@ export default function Hero() {
       </div>
 
       <div className="mt-10 flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
-        <span className="text-zinc-300" aria-hidden="true">
+        <span className="text-zinc-300" role="img" aria-label="Apple Music">
           <AppleMusic />
         </span>
-        <span className="sr-only">Apple Music</span>
         <span className="font-medium text-zinc-300">Last played</span> —{' '}
         {lastPlayed}
       </div>
