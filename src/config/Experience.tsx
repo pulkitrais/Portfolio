@@ -1,8 +1,13 @@
-import AWS from '@/components/technologies/AWS';
 import Figma from '@/components/technologies/Figma';
-import NodeJs from '@/components/technologies/NodeJs';
-import Postman from '@/components/technologies/Postman';
-import TypeScript from '@/components/technologies/TypeScript';
+
+// ✅ Correct imports for icons
+import { FaShieldAlt } from 'react-icons/fa';
+import { 
+  SiMicrosoftazure, 
+  SiCode, 
+  SiCanva, 
+  SiAdobephotoshop 
+} from 'react-icons/si';
 
 export interface Technology {
   name: string;
@@ -111,23 +116,21 @@ export const experiences: Experience[] = [
     startDate: 'October 2025',
     endDate: 'December 2025',
     technologies: [
-     [
-  {
-    name: 'Visual Design',
-    href: 'https://www.figma.com/',
-    icon: <Figma />,                    // Best for Visual/UI Design
-  },
-  {
-    name: 'Brand Assets',
-    href: 'https://www.canva.com/',
-    icon: <SiCanva />,                  // Good for Brand Kits & Assets
-  },
-  {
-    name: 'Campaign Creatives',
-    href: 'https://www.adobe.com/products/photoshop.html',
-    icon: <SiAdobephotoshop />,         // Best for Campaign Creatives
-  },
-],
+      {
+        name: 'Visual Design',
+        href: 'https://www.figma.com/',
+        icon: <Figma />,
+      },
+      {
+        name: 'Brand Assets',
+        href: 'https://www.canva.com/',
+        icon: <SiCanva />,
+      },
+      {
+        name: 'Campaign Creatives',
+        href: 'https://www.adobe.com/products/photoshop.html',
+        icon: <SiAdobephotoshop />,
+      },
     ],
     website: '',
   },
