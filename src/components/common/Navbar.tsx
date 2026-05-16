@@ -4,7 +4,6 @@ import { Link } from 'next-view-transitions';
 import React from 'react';
 
 import Container from './Container';
-import { ThemeToggleButton } from './ThemeSwitch';
 
 export default function Navbar() {
   return (
@@ -30,7 +29,6 @@ export default function Navbar() {
               K
             </span>
           </div>
-          <ThemeToggleButton variant="circle" start="top-right" blur />
         </div>
       </div>
     </Container>

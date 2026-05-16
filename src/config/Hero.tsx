@@ -24,6 +24,7 @@
  * That's it! Your portfolio will automatically update with your information.
  */
 import Github from '@/components/svgs/Github';
+import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
 import AWS from '@/components/technologies/AWS';
@@ -105,6 +106,11 @@ export const socialLinks = [
     name: 'Github',
     href: 'https://github.com/pulkitrais',
     icon: <Github />,
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/pulkitrais',
+    icon: <LinkedIn />,
   },
   {
     name: 'Email',
