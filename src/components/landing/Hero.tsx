@@ -38,7 +38,7 @@ export default function Hero() {
             >
               {email}
             </a>
-            <Pencil className="size-3 text-zinc-600" />
+            <Pencil className="size-3 text-zinc-600" aria-hidden="true" />
           </p>
         </div>
       </div>
