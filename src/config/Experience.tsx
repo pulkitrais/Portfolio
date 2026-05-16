@@ -43,28 +43,28 @@ export const experiences: Experience[] = [
       'Implemented full SOC workflow: log ingestion → real-time KQL detection → incident creation → automated SOAR response.',
       'Conducted extensive testing, tuning, and documentation of detection rules, playbooks, and runbooks for production readiness.',
     ],
-    startDate: 'May 2026',
+    startDate: 'Jan 2026',
     endDate: 'Present',
     technologies: [
       {
         name: 'Azure Sentinel',
         href: 'https://learn.microsoft.com/en-us/azure/sentinel/',
-        icon: <AWS />,
+        icon: <SiMicrosoftazure />,
       },
       {
         name: 'KQL',
         href: 'https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/',
-        icon: <TypeScript />,
+        icon: <SiCode />,
       },
       {
         name: 'SOAR Playbooks',
         href: 'https://learn.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook',
-        icon: <NodeJs />,
+        icon: <SiMicrosoftazure />,
       },
       {
         name: 'Azure Monitor Agent',
         href: 'https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview',
-        icon: <Postman />,
+        icon: <SiMicrosoftazure />,
       },
     ],
     website: 'https://github.com/pulkitrais',
@@ -81,23 +81,18 @@ export const experiences: Experience[] = [
       'Built and maintained client-side security tools focused on digital forensics, malware analysis support, and OSINT collection for threat intelligence.',
       'Performed regular threat-hunting exercises using MITRE ATT&CK framework and custom detection logic across simulated environments.',
     ],
-    startDate: 'January 2023',
+    startDate: 'June 2025',
     endDate: 'Present',
     technologies: [
       {
         name: 'Threat Hunting',
         href: 'https://attack.mitre.org/resources/getting-started/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'Node.js Automation',
-        href: 'https://nodejs.org/',
-        icon: <NodeJs />,
+        icon: <FaShieldAlt />,
       },
       {
         name: 'MITRE ATT&CK',
         href: 'https://attack.mitre.org/',
-        icon: <Postman />,
+        icon: <FaShieldAlt />,
       },
     ],
     website: 'https://github.com/pulkitrais',
@@ -116,21 +111,23 @@ export const experiences: Experience[] = [
     startDate: 'October 2025',
     endDate: 'December 2025',
     technologies: [
-      {
-        name: 'Visual Design',
-        href: 'https://www.figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'Brand Assets',
-        href: 'https://www.figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'Campaign Creatives',
-        href: 'https://www.figma.com/',
-        icon: <Figma />,
-      },
+     [
+  {
+    name: 'Visual Design',
+    href: 'https://www.figma.com/',
+    icon: <Figma />,                    // Best for Visual/UI Design
+  },
+  {
+    name: 'Brand Assets',
+    href: 'https://www.canva.com/',
+    icon: <SiCanva />,                  // Good for Brand Kits & Assets
+  },
+  {
+    name: 'Campaign Creatives',
+    href: 'https://www.adobe.com/products/photoshop.html',
+    icon: <SiAdobephotoshop />,         // Best for Campaign Creatives
+  },
+],
     ],
     website: '',
   },
