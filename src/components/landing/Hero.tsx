@@ -21,6 +21,14 @@ const socialIcons = {
   Instagram: Instagram,
 };
 
+const socialAriaLabels = {
+  X: 'Visit X (Twitter) profile',
+  LinkedIn: 'Visit LinkedIn profile',
+  GitHub: 'Visit GitHub profile',
+  YouTube: 'Visit YouTube channel',
+  Instagram: 'Visit Instagram profile',
+};
+
 export default function Hero() {
   const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
 
@@ -81,7 +89,9 @@ export default function Hero() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={link.name === 'X' ? 'X (Twitter)' : link.name}
+              aria-label={
+                socialAriaLabels[link.name as keyof typeof socialAriaLabels]
+              }
               className="text-[#a1a1aa] transition-colors duration-200 hover:text-white"
             >
               <Icon className="size-5" strokeWidth={1.75} aria-hidden="true" />
