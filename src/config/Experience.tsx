@@ -1,6 +1,4 @@
 import Figma from '@/components/technologies/Figma';
-
-// ✅ Correct imports for icons
 import { FaShieldAlt } from 'react-icons/fa';
 import { 
   SiMicrosoftazure, 
