@@ -52,7 +52,7 @@ export default function Hero() {
     <Container className="flex min-h-[calc(100vh-6rem)] flex-col justify-center py-8 sm:py-12 md:min-h-[calc(100vh-7rem)] md:py-16">
       <Image
         src={heroConfig.avatar}
-        alt={name}
+        alt={`Profile photo of ${name}`}
         width={160}
         height={160}
         className="size-20 rounded-full border border-black/10 object-cover shadow-sm sm:size-24 dark:border-white/10"
