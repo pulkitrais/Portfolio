@@ -23,12 +23,7 @@ const socialIcons = {
 
 export default function Hero() {
   const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
-  const visibleSocialLinks = socialLinks.filter(
-    (link) =>
-      link.href &&
-      !link.href.includes('YOUR_USERNAME') &&
-      !link.href.toLowerCase().includes('paste your link'),
-  );
+  const visibleSocialLinks = socialLinks.filter((link) => link.href);
 
   return (
     <Container className="pt-8">

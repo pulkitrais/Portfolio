@@ -109,12 +109,4 @@ export const socialLinks = [
     name: 'GitHub',
     href: 'https://github.com/pulkitrais',
   },
-  {
-    name: 'YouTube',
-    href: '',
-  },
-  {
-    name: 'Instagram',
-    href: '',
-  },
 ];
