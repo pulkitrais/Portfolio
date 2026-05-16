@@ -7,7 +7,6 @@ import React from 'react';
 import Skill from '../common/Skill';
 import Github from '../svgs/Github';
 import LinkedIn from '../svgs/LinkedIn';
-import Website from '../svgs/Website';
 import X from '../svgs/X';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
@@ -43,20 +42,6 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
               >
                 {experience.company}
               </h3>
-              {experience.website && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={experience.website}
-                      target="_blank"
-                      className="size-4 text-neutral-500"
-                    >
-                      <Website />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent>Visit Website</TooltipContent>
-                </Tooltip>
-              )}
               {experience.x && (
                 <Tooltip>
                   <TooltipTrigger asChild>

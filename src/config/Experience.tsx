@@ -1,4 +1,5 @@
 import AWS from '@/components/technologies/AWS';
+import Figma from '@/components/technologies/Figma';
 import NodeJs from '@/components/technologies/NodeJs';
 import Postman from '@/components/technologies/Postman';
 import TypeScript from '@/components/technologies/TypeScript';
@@ -27,6 +28,38 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
+  {
+    isCurrent: false,
+    company: 'InAmigos Foundation',
+    position: 'Visual Designer Intern (Hobby)',
+    location: 'India',
+    image: '/company/loop.png',
+    description: [
+      'Completed a short-term design internship focused on visual communication for social initiatives.',
+      'Created social creatives, campaign assets, and basic brand collateral for foundation activities.',
+      'Worked on this role as a hobby-driven creative experience, not as a core career track.',
+    ],
+    startDate: 'October 2025',
+    endDate: 'December 2025',
+    technologies: [
+      {
+        name: 'Visual Design',
+        href: 'https://www.figma.com/',
+        icon: <Figma />,
+      },
+      {
+        name: 'Brand Assets',
+        href: 'https://www.figma.com/',
+        icon: <TypeScript />,
+      },
+      {
+        name: 'Campaign Creatives',
+        href: 'https://www.figma.com/',
+        icon: <Postman />,
+      },
+    ],
+    website: '',
+  },
   {
     isCurrent: true,
     isBlur: false,
