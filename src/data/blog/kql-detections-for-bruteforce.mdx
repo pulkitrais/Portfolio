@@ -1,0 +1,33 @@
+---
+title: 'Writing KQL Detections for Brute-Force Activity'
+description: 'How I designed, tested, and tuned KQL analytics rules to detect brute-force patterns with better signal quality.'
+image: '/blog/time.png'
+tags: ['kql', 'detection-engineering', 'siem', 'sentinel']
+date: '2026-05-14'
+isPublished: true
+---
+
+## Detection objective
+
+I needed a rule that could detect repeated failed authentication attempts and surface only meaningful incidents.
+
+## Rule design approach
+
+- Group by account and source IP
+- Use a short rolling time window
+- Add thresholds for failed attempts
+- Include host and timestamp context for triage
+
+## Tuning process
+
+I iterated on thresholds after reviewing alert history.  
+The focus was reducing noisy events while preserving suspicious behavior.
+
+## What improved quality
+
+- Excluding known benign sources
+- Enriching entities (user, IP, host)
+- Adding severity mapping based on volume and frequency
+
+The final rule gave much cleaner triage and faster analyst decisions.
+

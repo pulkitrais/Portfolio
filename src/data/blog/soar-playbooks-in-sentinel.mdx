@@ -1,0 +1,31 @@
+---
+title: 'Automating Incident Response with Sentinel SOAR Playbooks'
+description: 'A breakdown of my Logic Apps playbooks and automation rules for faster, repeatable incident response.'
+image: '/blog/mac.jpeg'
+tags: ['soar', 'logic-apps', 'incident-response', 'sentinel']
+date: '2026-05-16'
+isPublished: true
+---
+
+## Why automate response
+
+Manual enrichment and repetitive triage steps slow down SOC operations.  
+I used SOAR playbooks to automate high-frequency actions.
+
+## Playbooks I implemented
+
+- Extract incident entities
+- Enrich source IP with context
+- Capture host + user details
+- Add structured notes back to incidents
+- Trigger notifications for critical cases
+
+## Automation rule strategy
+
+Rules were mapped to alert type and severity so that only the right playbook executes.
+This prevented unnecessary automation and reduced analyst fatigue.
+
+## Outcome
+
+I achieved a faster loop from **detection → enrichment → response** and improved consistency across investigations.
+
