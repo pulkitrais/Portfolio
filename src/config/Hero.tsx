@@ -74,6 +74,8 @@ export const heroConfig = {
     template:
       'Focused on {skills:0}, {skills:1}, {skills:2}, and {skills:3}. I build practical blue-team workflows for <b>detection engineering</b>, <b>incident response</b>, and <b>security operations</b>.',
   },
+  lastPlayed: 'Starboy',
+  featuredSkillsCount: 4,
 
   // Buttons Configuration
   buttons: [

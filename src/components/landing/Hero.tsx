@@ -9,7 +9,15 @@ import Skill from '../common/Skill';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function Hero() {
-  const { name, title, skills, description, avatar } = heroConfig;
+  const {
+    name,
+    title,
+    skills,
+    description,
+    avatar,
+    lastPlayed,
+    featuredSkillsCount,
+  } = heroConfig;
 
   const renderDescription = () => {
     const parts = parseTemplate(description.template, skills);
@@ -82,10 +90,11 @@ export default function Hero() {
       </div>
 
       <div className="mt-10 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
-        <span className="font-medium text-zinc-300">Last played</span> — Starboy
+        <span className="font-medium text-zinc-300">Last played</span> —{' '}
+        {lastPlayed}
       </div>
       <div className="mt-2 flex flex-wrap gap-2">
-        {skills.slice(0, 4).map((skill) => {
+        {skills.slice(0, featuredSkillsCount).map((skill) => {
           const SkillComponent =
             skillComponents[skill.component as keyof typeof skillComponents];
           return (

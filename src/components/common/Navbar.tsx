@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-400">
             <Search className="size-3.5" />
-            <span>Ctrl</span>
+            <span>⌘/Ctrl</span>
             <span className="rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] text-zinc-300">
               K
             </span>
