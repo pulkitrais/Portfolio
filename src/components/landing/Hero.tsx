@@ -81,7 +81,14 @@ export default function Hero() {
       <div className="mt-5 mb-2 flex items-center gap-[18px]">
         {socialLinks.map((link) => {
           const Icon = socialIcons[link.name as keyof typeof socialIcons];
-          if (!Icon) return null;
+          if (!Icon) {
+            if (process.env.NODE_ENV === 'development') {
+              console.warn(
+                `No icon mapping found for social link: ${link.name}`,
+              );
+            }
+            return null;
+          }
 
           return (
             <a
@@ -90,7 +97,8 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={
-                socialAriaLabels[link.name as keyof typeof socialAriaLabels]
+                socialAriaLabels[link.name as keyof typeof socialAriaLabels] ??
+                `Visit ${link.name} profile`
               }
               className="text-[#a1a1aa] transition-colors duration-200 hover:text-white"
             >
