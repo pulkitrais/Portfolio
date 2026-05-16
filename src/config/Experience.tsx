@@ -50,12 +50,12 @@ export const experiences: Experience[] = [
       {
         name: 'Brand Assets',
         href: 'https://www.figma.com/',
-        icon: <TypeScript />,
+        icon: <Figma />,
       },
       {
         name: 'Campaign Creatives',
         href: 'https://www.figma.com/',
-        icon: <Postman />,
+        icon: <Figma />,
       },
     ],
     website: '',
