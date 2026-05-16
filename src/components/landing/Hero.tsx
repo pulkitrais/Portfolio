@@ -1,22 +1,15 @@
 import { heroConfig, skillComponents, socialLinks } from '@/config/Hero';
 import { parseTemplate } from '@/lib/hero';
 import { Link } from 'next-view-transitions';
+import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
 import Skill from '../common/Skill';
-import CV from '../svgs/CV';
-import Chat from '../svgs/Chat';
-import { Button } from '../ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
-const buttonIcons = {
-  CV: CV,
-  Chat: Chat,
-};
-
 export default function Hero() {
-  const { name, title, skills, description, buttons } = heroConfig;
+  const { name, title, skills, description, avatar } = heroConfig;
 
   const renderDescription = () => {
     const parts = parseTemplate(description.template, skills);
@@ -48,52 +41,37 @@ export default function Hero() {
   };
 
   return (
-    <Container className="mx-auto max-w-5xl">
-      {/* Avatar */}
-      <div
-        aria-label="profile avatar"
-        className="size-24 rounded-full bg-red-600"
-      />
-
-      {/* Text Area */}
-      <div className="mt-8 flex flex-col gap-3">
-        <h1 className="text-3xl leading-tight font-bold md:text-5xl">
-          {name} — <span className="text-secondary">{title}</span>
-        </h1>
-
-        <div className="text-secondary mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap md:text-lg">
-          {renderDescription()}
+    <Container className="pt-8">
+      <div className="flex items-start gap-4">
+        <Image
+          src={avatar}
+          alt={name}
+          width={72}
+          height={72}
+          className="rounded-full border border-zinc-700 object-cover"
+        />
+        <div>
+          <h1 className="text-4xl leading-tight font-semibold text-zinc-100">
+            {name}
+          </h1>
+          <p className="mt-1 text-lg text-zinc-400">{title}</p>
         </div>
       </div>
 
-      {/* Buttons */}
-      <div className="mt-8 flex flex-wrap gap-4">
-        {buttons.map((button, index) => {
-          const IconComponent =
-            buttonIcons[button.icon as keyof typeof buttonIcons];
-          return (
-            <Button
-              key={index}
-              variant={button.variant as 'outline' | 'default'}
-            >
-              {IconComponent && <IconComponent />}
-              <Link href={button.href}>{button.text}</Link>
-            </Button>
-          );
-        })}
+      <div className="mt-6 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap text-zinc-400">
+        {renderDescription()}
       </div>
 
-      {/* Social Links */}
-      <div className="mt-8 flex gap-2">
+      <div className="mt-6 flex gap-3">
         {socialLinks.map((link) => (
           <Tooltip key={link.name} delayDuration={0}>
             <TooltipTrigger asChild>
               <Link
                 href={link.href}
                 key={link.name}
-                className="text-secondary flex items-center gap-2"
+                className="text-zinc-500 transition-colors hover:text-zinc-200"
               >
-                <span className="size-6">{link.icon}</span>
+                <span className="size-5">{link.icon}</span>
               </Link>
             </TooltipTrigger>
             <TooltipContent>
@@ -101,6 +79,21 @@ export default function Hero() {
             </TooltipContent>
           </Tooltip>
         ))}
+      </div>
+
+      <div className="mt-10 rounded-xl border border-zinc-800 bg-zinc-900/40 p-4 text-sm text-zinc-400">
+        <span className="font-medium text-zinc-300">Last played</span> — Starboy
+      </div>
+      <div className="mt-2 flex flex-wrap gap-2">
+        {skills.slice(0, 4).map((skill) => {
+          const SkillComponent =
+            skillComponents[skill.component as keyof typeof skillComponents];
+          return (
+            <Skill key={skill.name} name={skill.name} href={skill.href}>
+              <SkillComponent />
+            </Skill>
+          );
+        })}
       </div>
     </Container>
   );
