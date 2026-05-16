@@ -37,6 +37,7 @@ export default function Blog() {
             </div>
             <Link
               href={`/blog/${post.slug}`}
+              aria-label={`Read more about ${post.frontmatter.title}`}
               className="text-zinc-400 transition-colors hover:text-zinc-200"
             >
               Read more →
