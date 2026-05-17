@@ -19,13 +19,5 @@ export const navbarConfig = {
       label: 'Work',
       href: '/work-experience',
     },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Resume',
-      href: '/resume',
-    },
   ] as NavItem[],
 };

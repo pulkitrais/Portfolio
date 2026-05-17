@@ -1,7 +1,6 @@
 import { heroConfig, socialLinks } from '@/config/Hero';
 import { Pencil } from 'lucide-react';
 import { Link } from 'next-view-transitions';
-import Image from 'next/image';
 import React from 'react';
 
 import Container from '../common/Container';
@@ -9,23 +8,11 @@ import Spotify from '../svgs/Spotify';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function Hero() {
-  const { name, title, email, avatar, bio, lastPlayed } = heroConfig;
+  const { name, title, email, bio, lastPlayed } = heroConfig;
 
   return (
     <Container className="pt-8">
-      {/* Avatar + Name / Subtitle */}
-      <div className="flex items-start gap-4">
-        {/* Avatar with bright yellow circular background */}
-        <div className="flex-shrink-0 rounded-full bg-yellow-400 p-1.5">
-          <Image
-            src={avatar}
-            alt={name}
-            width={68}
-            height={68}
-            className="rounded-full object-cover"
-          />
-        </div>
-
+      <div>
         <div>
           <h1 className="text-4xl leading-tight font-bold text-zinc-100">
             {name}
