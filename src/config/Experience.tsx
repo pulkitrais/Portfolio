@@ -127,6 +127,122 @@ export const experiences: Experience[] = [
   },
   {
     isCurrent: false,
+    company: 'EduSkills Academy',
+    position: 'Ethical Hacking Internship (10 weeks)',
+    location: 'Remote',
+    image: '/company/prepeasy.png',
+    description: [
+      'Completed an intensive 10-week internship covering ethical hacking fundamentals and hands-on offensive security practices.',
+      'Trained in malware analysis, Kali Linux tools, web application penetration testing, and vulnerability assessment.',
+    ],
+    startDate: 'Mar 2026',
+    endDate: 'May 2026',
+    technologies: [
+      {
+        name: 'Ethical Hacking',
+        href: 'https://www.eccouncil.org/what-is-ethical-hacking/',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 11c0-1.657 1.343-3 3-3h1V7a4 4 0 10-8 0v1h1c1.657 0 3 1.343 3 3zm0 0v2m-7 8h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Kali Linux',
+        href: 'https://www.kali.org/',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Malware Analysis',
+        href: 'https://attack.mitre.org/',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 8.944 11.922"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Web App Pentesting',
+        href: 'https://owasp.org/www-project-web-security-testing-guide/',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 16h-1v-4h-1m1-4h.01M12 20h9"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Vulnerability Assessment',
+        href: 'https://www.cisa.gov/resources-tools/services/cyber-resilience-review-crr',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+            />
+          </svg>
+        ),
+      },
+    ],
+    website: '',
+  },
+  {
+    isCurrent: false,
     company: 'Independent SOC Operations & Blue Team Projects',
     position: 'Defensive Security & Automation',
     location: 'India',
@@ -182,6 +298,81 @@ export const experiences: Experience[] = [
       },
     ],
     website: 'https://github.com/pulkitrais',
+  },
+  {
+    isCurrent: false,
+    company: 'AICTE + Zscaler',
+    position: 'Zero Trust Cloud Security Virtual Internship',
+    location: 'Remote',
+    image: '/company/expelee.png',
+    description: [
+      'Completed a virtual internship focused on Zero Trust architecture, cloud security concepts, and practical implementation supported by Zscaler.',
+    ],
+    startDate: 'July 2024',
+    endDate: 'Sept 2024',
+    technologies: [
+      {
+        name: 'Zero Trust Architecture',
+        href: 'https://www.nist.gov/publications/zero-trust-architecture',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 11c0-1.657 1.343-3 3-3h1V7a4 4 0 10-8 0v1h1c1.657 0 3 1.343 3 3zm0 0v2m-7 8h14a2 2 0 002-2v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2z"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Cloud Security',
+        href: 'https://www.cisa.gov/topics/cybersecurity-best-practices/cloud-security',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-10A7 7 0 103 15z"
+            />
+          </svg>
+        ),
+      },
+      {
+        name: 'Zscaler',
+        href: 'https://www.zscaler.com/',
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 7h16M4 12h16M4 17h16"
+            />
+          </svg>
+        ),
+      },
+    ],
+    website: '',
   },
   {
     isCurrent: false,
