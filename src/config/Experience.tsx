@@ -10,6 +10,7 @@ export interface Experience {
   company: string;
   position: string;
   location: string;
+  image: string;
   description: string[];
   startDate: string;
   endDate: string;
@@ -29,6 +30,7 @@ export const experiences: Experience[] = [
     company: 'Azure Sentinel SIEM + SOAR Implementation Lab',
     position: 'Hands-on Security Operations & Automation',
     location: 'India',
+    image: '/company/promote.png',
     description: [
       'Architected and deployed a production-grade Microsoft Sentinel SIEM + SOAR environment for real-time threat detection and automated response.',
       'Engineered advanced KQL analytics rules including brute-force detection with high-fidelity alerting.',
@@ -128,6 +130,7 @@ export const experiences: Experience[] = [
     company: 'Independent SOC Operations & Blue Team Projects',
     position: 'Defensive Security & Automation',
     location: 'India',
+    image: '/company/upsurge.png',
     description: [
       'Completed TryHackMe premium defensive security path with advanced modules in alert triage, threat hunting, incident response, and purple-team simulations.',
       'Developed multiple Python-based automation frameworks for log parsing, behavioral anomaly detection, phishing email analysis, and security orchestration.',
@@ -185,6 +188,7 @@ export const experiences: Experience[] = [
     company: 'InAmigos Foundation',
     position: 'Visual Designer Intern (Hobby)',
     location: 'India',
+    image: '/company/loop.png',
     description: [
       'Completed a short-term design internship focused on visual communication for social initiatives.',
       'Created social creatives, campaign assets, and basic brand collateral for foundation activities.',
