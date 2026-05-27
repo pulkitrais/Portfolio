@@ -2,7 +2,6 @@ import { navbarConfig } from '@/config/Navbar';
 import { Link } from 'next-view-transitions';
 import React from 'react';
 
-import Medium from '../svgs/Medium';
 import Container from './Container';
 
 export default function Navbar() {
@@ -26,7 +25,7 @@ export default function Navbar() {
             aria-label="Medium profile"
             className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
           >
-            <Medium className="size-5" />
+            Medium
           </a>
         </div>
       </div>
