@@ -22,7 +22,7 @@ export default function Navbar() {
             href={navbarConfig.mediumProfile}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Medium profile"
+            aria-label="Medium profile (opens in a new tab)"
             className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
           >
             Medium
