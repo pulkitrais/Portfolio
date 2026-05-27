@@ -26,6 +26,7 @@
 import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
+import Website from '@/components/svgs/Website';
 import X from '@/components/svgs/X';
 import AWS from '@/components/technologies/AWS';
 import NodeJs from '@/components/technologies/NodeJs';
@@ -115,6 +116,11 @@ export const socialLinks = [
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/pulkitrais',
     icon: <LinkedIn />,
+  },
+  {
+    name: 'Medium',
+    href: 'https://medium.com/@pulkitrai',
+    icon: <Website />,
   },
   {
     name: 'Email',

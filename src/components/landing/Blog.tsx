@@ -46,12 +46,22 @@ export default function Blog() {
         ))}
       </div>
       <div className="mt-8">
-        <Link
-          href="/blog"
-          className="inline-flex rounded-lg border border-zinc-700 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200 transition-colors hover:bg-zinc-900"
-        >
-          Show all blogs
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/blog"
+            className="inline-flex rounded-lg border border-zinc-700 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200 transition-colors hover:bg-zinc-900"
+          >
+            Show all blogs
+          </Link>
+          <Link
+            href="https://medium.com/@pulkitrai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-lg border border-zinc-700 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200 transition-colors hover:bg-zinc-900"
+          >
+            Read on Medium
+          </Link>
+        </div>
       </div>
     </Container>
   );
