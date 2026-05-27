@@ -22,7 +22,6 @@ export default function Navbar() {
             href={navbarConfig.mediumProfile}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit Medium profile"
             className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
           >
             Medium
