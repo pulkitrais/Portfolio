@@ -24,7 +24,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
           >
-            Medium
+            Medium Profile
           </a>
         </div>
       </div>
