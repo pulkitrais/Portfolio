@@ -26,6 +26,14 @@ export default function Navbar() {
           >
             Medium Profile
           </a>
+          <a
+            href={navbarConfig.xProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
+          >
+            X Profile
+          </a>
         </div>
       </div>
     </Container>

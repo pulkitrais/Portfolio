@@ -5,6 +5,7 @@ export interface NavItem {
 
 export const navbarConfig = {
   mediumProfile: 'https://medium.com/@pulkitrai',
+  xProfile: 'https://x.com/pulkitrais',
   logo: {
     src: '/assets/logo.png',
     alt: 'Pulkit Rai',
