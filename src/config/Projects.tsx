@@ -6,6 +6,22 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    title: 'CheckYourWeb',
+    description:
+      'Live web-checking project for quickly validating website availability and key uptime checks.',
+    image: '/project/checkyourweb.png',
+    link: 'https://checkyourweb.vercel.app/',
+    technologies: [
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
+      { name: 'API Testing', icon: <Postman key="postman" /> },
+    ],
+    live: 'https://checkyourweb.vercel.app/',
+    details: false,
+    projectDetailsPageSlug: '/projects',
+    isWorking: true,
+  },
+  {
     title: 'Azure Sentinel SIEM + SOAR Implementation Lab',
     description:
       'Architected and deployed a production-grade Sentinel SIEM + SOAR environment with KQL detections, automation rules, and real-time incident response workflows.',
