@@ -9,7 +9,7 @@ export const projects: Project[] = [
     title: 'CheckYourWeb',
     description:
       'Live web-checking project for quickly validating website availability and key uptime checks.',
-    image: '/project/notesbuddy.png',
+    image: '/project/checkyourweb.png',
     link: 'https://checkyourweb.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
