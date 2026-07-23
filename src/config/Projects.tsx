@@ -6,6 +6,23 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
+    title: 'Domain Security Leadership at Genboard',
+    description:
+      'Current role focused on cloud security, SOC operations, AWS IAM governance, and security log collection/analysis for faster detection and response.',
+    image: '/meta/work.png',
+    link: 'https://genboard.com',
+    technologies: [
+      { name: 'Cloud Security', icon: <AWS key="cloud-security" /> },
+      { name: 'AWS IAM', icon: <TypeScript key="aws-iam" /> },
+      { name: 'SOC Operations', icon: <NodeJs key="soc-operations" /> },
+      { name: 'Log Analysis', icon: <Postman key="log-analysis" /> },
+    ],
+    live: 'https://genboard.com',
+    details: false,
+    projectDetailsPageSlug: '/projects',
+    isWorking: true,
+  },
+  {
     title: 'CheckYourWeb',
     description:
       'Live web-checking project for quickly validating website availability and key uptime checks.',
