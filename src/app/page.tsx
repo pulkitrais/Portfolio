@@ -1,13 +1,5 @@
-import Container from '@/components/common/Container';
-import Experience from '@/components/landing/Experience';
-import Hero from '@/components/landing/Hero';
-import React from 'react';
+import PortfolioPage from '@/components/portfolio/PortfolioPage';
 
-export default function page() {
-  return (
-    <Container className="min-h-screen py-8">
-      <Hero />
-      <Experience />
-    </Container>
-  );
+export default function Page() {
+  return <PortfolioPage />;
 }

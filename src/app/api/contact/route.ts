@@ -9,7 +9,7 @@ const RATE_LIMIT_MAX_REQUESTS = 5;
 const contactSchema = z.object({
   name: z.string().min(2).max(100),
   email: z.string().email(),
-  phone: z.string().min(10).max(20),
+  phone: z.string().max(20).optional().default(''),
   message: z.string().min(10).max(1000),
 });
 
@@ -65,7 +65,7 @@ function checkRateLimit(clientIP: string): {
 async function sendToTelegram(data: {
   name: string;
   email: string;
-  phone: string;
+  phone?: string;
   message: string;
 }): Promise<boolean> {
   const telegramToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -86,9 +86,7 @@ async function sendToTelegram(data: {
 
 👤 *Name:* ${data.name.trim()}
 📧 *Email:* ${data.email.trim()}
-📱 *Phone:* ${data.phone.trim()}
-
-💬 *Message:*
+${data.phone ? `📱 *Phone:* ${data.phone.trim()}\n\n` : ''}💬 *Message:*
 ${data.message.trim()}
 
 ⏰ *Submitted:* ${new Date().toISOString()}
