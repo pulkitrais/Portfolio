@@ -49,7 +49,7 @@ export const heroConfig = {
   avatar: '/assets/logo.png',
 
   // Short bio shown below the header
-  bio: 'At work as Domain Security Lead at Genboard.com. Right now focused on cloud security, SOC operations, AWS IAM, and log collection/analysis.',
+  bio: 'At work as Digital Security Lead at GenBoard. Right now focused on cloud security, SOC operations, AWS IAM, and log collection/analysis.',
 
   // Skills Configuration (kept for full work-experience page use)
   skills: [
@@ -86,12 +86,6 @@ export const heroConfig = {
   // Buttons Configuration
   buttons: [
     {
-      variant: 'outline',
-      text: 'Resume / CV',
-      href: '/resume',
-      icon: 'CV',
-    },
-    {
       variant: 'default',
       text: 'Get in touch',
       href: '/contact',
@@ -114,7 +108,7 @@ export const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/pulkitrais',
+    href: 'https://www.linkedin.com/in/pulkitrai',
     icon: <LinkedIn />,
   },
   {

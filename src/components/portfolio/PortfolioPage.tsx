@@ -88,12 +88,6 @@ export default function PortfolioPage() {
             View Projects
           </a>
           <a
-            href="mailto:pulkitonwork@gmail.com?subject=Pulkit%20Rai%20CV%20Request"
-            className="rounded-lg border border-cyan-400/50 px-5 py-2.5 text-sm font-semibold text-cyan-700 transition hover:bg-cyan-500/10 dark:text-cyan-200"
-          >
-            Download CV
-          </a>
-          <a
             href="#contact"
             className="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-900"
           >
@@ -106,20 +100,20 @@ export default function PortfolioPage() {
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-sm text-slate-700 dark:text-zinc-300">
           <a
-            href="https://github.com/"
+            href="https://github.com/pulkitrais"
             target="_blank"
             rel="noreferrer"
             className="hover:text-cyan-600 dark:hover:text-cyan-300"
           >
-            GitHub (placeholder)
+            GitHub
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/pulkitrai"
             target="_blank"
             rel="noreferrer"
             className="hover:text-cyan-600 dark:hover:text-cyan-300"
           >
-            LinkedIn (placeholder)
+            LinkedIn
           </a>
           <a
             href="https://pulkitrai.tech"
@@ -173,7 +167,7 @@ export default function PortfolioPage() {
           </div>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="https://checkyourweb.app"
+              href="https://checkyourweb.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="rounded-lg bg-emerald-400 px-4 py-2 text-sm font-semibold text-[#042012] transition hover:bg-emerald-300"
@@ -204,6 +198,19 @@ export default function PortfolioPage() {
         <h2 className="text-3xl font-semibold text-cyan-700 dark:text-cyan-200">
           Professional Experience
         </h2>
+        <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-7 dark:border-zinc-800 dark:bg-[#040d1d]">
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-zinc-100">
+            Digital Security Lead — GenBoard
+          </h3>
+          <p className="mt-1 text-sm text-slate-600 dark:text-zinc-400">
+            2026 – Present • India
+          </p>
+          <p className="mt-4 text-slate-700 dark:text-zinc-300">
+            Managing email security, resolving geo-location access/bypass issues,
+            and working with DNS security controls while leading day-to-day
+            digital security operations.
+          </p>
+        </div>
         <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-7 dark:border-zinc-800 dark:bg-[#040d1d]">
           <h3 className="text-xl font-semibold text-slate-900 dark:text-zinc-100">
             Zero Trust Cloud Security Intern — AICTE + Zscaler
@@ -303,30 +310,22 @@ export default function PortfolioPage() {
               <span className="text-cyan-700 dark:text-cyan-300">Website:</span>{' '}
               pulkitrai.tech
             </p>
-            <div className="pt-2">
-              <a
-                href="mailto:pulkitonwork@gmail.com?subject=Pulkit%20Rai%20CV%20Request"
-                className="inline-flex rounded-lg border border-cyan-400/40 px-4 py-2 text-sm text-cyan-700 hover:bg-cyan-500/10 dark:text-cyan-200"
-              >
-                Download CV
-              </a>
-            </div>
             <div className="flex gap-4 pt-3 text-sm">
               <a
-                href="https://github.com/"
+                href="https://github.com/pulkitrais"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-cyan-600 dark:hover:text-cyan-300"
               >
-                GitHub (placeholder)
+                GitHub
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/pulkitrai"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-cyan-600 dark:hover:text-cyan-300"
               >
-                LinkedIn (placeholder)
+                LinkedIn
               </a>
             </div>
           </div>
