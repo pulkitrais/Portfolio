@@ -49,7 +49,7 @@ export const heroConfig = {
   avatar: '/assets/logo.png',
 
   // Short bio shown below the header
-  bio: 'Focused on building practical blue-team workflows for detection engineering, incident response, and security operations.',
+  bio: 'At work as Domain Security Lead at Genboard.com. Right now focused on cloud security, SOC operations, AWS IAM, and log collection/analysis.',
 
   // Skills Configuration (kept for full work-experience page use)
   skills: [
@@ -118,8 +118,8 @@ export const socialLinks = [
     icon: <LinkedIn />,
   },
   {
-    name: 'Medium',
-    href: 'https://medium.com/@pulkitrai',
+    name: 'At Work',
+    href: 'https://genboard.com',
     icon: <Website />,
   },
   {

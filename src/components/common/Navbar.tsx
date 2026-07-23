@@ -18,22 +18,17 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={navbarConfig.mediumProfile}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
-          >
-            Medium Profile
-          </a>
-          <a
-            href={navbarConfig.xProfile}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
-          >
-            X Profile
-          </a>
+          {navbarConfig.externalProfiles.map((profile) => (
+            <a
+              key={profile.label}
+              href={profile.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-400 transition-colors duration-200 hover:text-zinc-100"
+            >
+              {profile.label}
+            </a>
+          ))}
         </div>
       </div>
     </Container>

@@ -3,9 +3,22 @@ export interface NavItem {
   href: string;
 }
 
+export interface ExternalProfile {
+  label: string;
+  href: string;
+}
+
 export const navbarConfig = {
-  mediumProfile: 'https://medium.com/@pulkitrai',
-  xProfile: 'https://x.com/pulkitrais',
+  externalProfiles: [
+    {
+      label: 'At Work',
+      href: 'https://genboard.com',
+    },
+    {
+      label: 'X Profile',
+      href: 'https://x.com/pulkitrais',
+    },
+  ] as ExternalProfile[],
   logo: {
     src: '/assets/logo.png',
     alt: 'Pulkit Rai',
