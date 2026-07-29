@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:06b6d4&height=180&section=header&text=Portfolio&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="banner" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=06B6D4&center=true&vCenter=true&width=520&lines=Next.js+15+%2B+React+19+%2B+TypeScript;MDX+blog+%E2%80%A2+Framer+Motion+%E2%80%A2+Tailwind+4;Live+at+pulkitrai.tech" alt="Typing SVG" />
+</p>
+
 # 🚀 Portfolio
 
 **Personal portfolio & blog** — built with Next.js 15, React 19, and Tailwind CSS 4. Live at [pulkitrai.tech](https://pulkitrai.tech).
