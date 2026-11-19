@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulkit Rai | Cybersecurity Engineer & SOC Analyst</title>
+  <meta name="description" content="Portfolio of Pulkit Rai - Cybersecurity Engineer, Cloud Security Architect, and SOC Analyst specializing in Microsoft Sentinel, KQL detection rules, and automated incident response.">
+  <meta name="theme-color" content="#07090e">
+  <link rel="canonical" href="https://pulkitrai.tech/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Aurora Glow & Cyber Grid -->
+  <div class="aurora-background">
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+    <div class="aurora-blob blob-4"></div>
+  </div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header style="padding: 1rem 0;">
+    <nav class="navbar">
+      <a href="#home" class="nav-brand">
+        <span>Pulkit Rai</span>
+        <span class="brand-badge">SEC // OPS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#terminal" class="nav-link">Console</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 0.9rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1rem;">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Available for Cybersecurity Engineering & SOC Architecture
+      </div>
+
+      <h1 class="hero-title">
+        Building Resilient Cloud Security, <br>
+        <span class="gradient-text">Detection Engineering</span> & Response
+      </h1>
+
+      <p class="hero-subtitle">
+        Hi, I'm <strong>Pulkit Rai</strong>. Cybersecurity Engineer & SOC Analyst specializing in Microsoft Sentinel KQL, Cloud Security Posture (Azure / AWS), and automated SOAR response workflows.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary">
+          Explore Projects
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#terminal" class="btn btn-outline">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
+          Live Telemetry Console
+        </a>
+        <button id="copy-email-btn" class="btn btn-outline">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.654 2H10a2 2 0 00-2 2z"/><path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2"/></svg>
+          Copy Email
+        </button>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">28+</div>
+          <div class="metric-label">GitHub Repositories</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100%</div>
+          <div class="metric-label">Defense & Automation Focused</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">Azure/AWS</div>
+          <div class="metric-label">Multi-Cloud Security Architecture</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">24/7</div>
+          <div class="metric-label">Incident Readiness Mindset</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cyber Console -->
+  <section id="terminal" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive SOC Workstation</span>
+        <h2 class="section-title">Live Security Telemetry Stream</h2>
+        <p class="section-desc">Experience real-time SIEM log processing, KQL query execution, and automated SOAR threat mitigation.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-title">pulkit@sentinel-defense-node: ~/soc-pipeline</div>
+          <div class="terminal-tabs">
+            <button class="terminal-tab-btn active" data-tab="live">Live Telemetry</button>
+            <button class="terminal-tab-btn" data-tab="kql">Sentinel KQL</button>
+            <button class="terminal-tab-btn" data-tab="mitre">ATT&CK Matrix</button>
+          </div>
+        </div>
+        <div class="terminal-body" id="terminal-content">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Production Implementations</span>
+        <h2 class="section-title">Featured Security Engineering Projects</h2>
+        <p class="section-desc">Practical systems engineered for threat detection, cloud posture hardening, and incident response automation.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="cloud">Cloud & Sentinel</button>
+        <button class="filter-btn" data-filter="soar">SOAR & Automation</button>
+        <button class="filter-btn" data-filter="research">Research & Systems</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-category="cloud">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">Flagship Production</span>
+              <span style="font-size: 0.75rem; color: var(--accent-emerald); font-family: var(--font-mono);">● Live on GitHub</span>
+            </div>
+            <h3 class="project-card-title">Cloud Security Sentinel Suite</h3>
+            <p class="project-card-desc">
+              Production detection suite for Microsoft Sentinel and AWS environments. Features validated KQL queries for PIM elevation, open NSG detection, CIS Azure benchmark audits, and automated compute quarantine modules.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">Sentinel KQL</span>
+              <span class="tech-tag">Python 3.12</span>
+              <span class="tech-tag">CIS Benchmark</span>
+              <span class="tech-tag">GitHub Actions CI</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais/cloud-security-sentinel-suite" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Repository →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="soar">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">SOAR Automation</span>
+              <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">Playbook</span>
+            </div>
+            <h3 class="project-card-title">IOC Enrichment SOAR Playbook</h3>
+            <p class="project-card-desc">
+              Microsoft Sentinel Logic App playbook that automatically enriches incoming security incidents with threat intelligence feeds (VirusTotal, AbuseIPDB) to accelerate Tier-1 SOC analyst alert triage.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">Azure Logic Apps</span>
+              <span class="tech-tag">Threat Intel</span>
+              <span class="tech-tag">VirusTotal API</span>
+              <span class="tech-tag">AbuseIPDB</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais/ioc-enrichment-soar-playbook" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Repository →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="cloud">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">SIEM Architecture</span>
+              <span style="font-size: 0.75rem; color: var(--accent-purple); font-family: var(--font-mono);">Lab</span>
+            </div>
+            <h3 class="project-card-title">Practical SOC Lab on Azure</h3>
+            <p class="project-card-desc">
+              Full-featured cloud security operations lab with SIEM telemetry ingestion, custom analytical rule correlation, and incident investigation dashboards engineered for proactive threat hunting.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">Microsoft Sentinel</span>
+              <span class="tech-tag">Log Analytics</span>
+              <span class="tech-tag">Azure Monitor</span>
+              <span class="tech-tag">Workbooks</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="card-link">
+              Explore Lab Setup →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="research">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">Academic Research</span>
+              <span style="font-size: 0.75rem; color: var(--accent-magenta); font-family: var(--font-mono);">Thesis</span>
+            </div>
+            <h3 class="project-card-title">Human-Centric Cybersecurity Thesis</h3>
+            <p class="project-card-desc">
+              Research thesis analyzing human behavioral patterns in cybersecurity, balancing security control friction, organizational workflows, and attacker methodologies to create practical defense guidelines.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">Human Factors</span>
+              <span class="tech-tag">Threat Modeling</span>
+              <span class="tech-tag">Defense Controls</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="card-link">
+              Read Research →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="research">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">Cloud Infrastructure</span>
+              <span style="font-size: 0.75rem; color: var(--accent-amber); font-family: var(--font-mono);">Backend</span>
+            </div>
+            <h3 class="project-card-title">Cachedrive & Secure Cloud Storage</h3>
+            <p class="project-card-desc">
+              Secure file storage and distributed caching architecture built on AWS with strict IAM policy controls, telemetry logging hooks, and least-privilege access patterns.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">AWS S3 / IAM</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Details →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="research">
+          <div>
+            <div class="card-top">
+              <span class="project-type-tag">Application Defense</span>
+              <span style="font-size: 0.75rem; color: var(--accent-blue); font-family: var(--font-mono);">Full-Stack</span>
+            </div>
+            <h3 class="project-card-title">Wearthebeer Secure Commerce</h3>
+            <p class="project-card-desc">
+              Hardened e-commerce platform featuring secure checkout flows, authenticated session security, relational database controls, and audit trails.
+            </p>
+            <div class="tech-tag-list">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="card-link">
+              View Details →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Capabilities Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">Technical Expertise & Capabilities</h2>
+        <p class="section-desc">Technologies, frameworks, and defense practices used across cloud security and detection engineering.</p>
+      </div>
+
+      <div class="skills-category-grid">
+        <div class="skill-box">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            Cloud Security
+          </h3>
+          <ul class="skill-items">
+            <li class="skill-item"><span>Microsoft Sentinel</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 95%;"></div></div></li>
+            <li class="skill-item"><span>Azure Defender & RBAC</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div></li>
+            <li class="skill-item"><span>AWS Security & IAM</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 85%;"></div></div></li>
+            <li class="skill-item"><span>CIS Benchmarks</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 92%;"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Detection & SIEM
+          </h3>
+          <ul class="skill-items">
+            <li class="skill-item"><span>KQL (Kusto Queries)</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 96%;"></div></div></li>
+            <li class="skill-item"><span>MITRE ATT&CK Mapping</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 92%;"></div></div></li>
+            <li class="skill-item"><span>Log Analytics Pipelines</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 88%;"></div></div></li>
+            <li class="skill-item"><span>Threat Hunting & Triage</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Automation & Code
+          </h3>
+          <ul class="skill-items">
+            <li class="skill-item"><span>Python Security Scripting</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div></li>
+            <li class="skill-item"><span>TypeScript & Node.js</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 88%;"></div></div></li>
+            <li class="skill-item"><span>Logic Apps / SOAR</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 92%;"></div></div></li>
+            <li class="skill-item"><span>GitHub Actions CI/CD</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 86%;"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-box">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Threat Intelligence
+          </h3>
+          <ul class="skill-items">
+            <li class="skill-item"><span>VirusTotal API</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 94%;"></div></div></li>
+            <li class="skill-item"><span>AbuseIPDB Integration</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 90%;"></div></div></li>
+            <li class="skill-item"><span>IOC Enrichment Logic</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 92%;"></div></div></li>
+            <li class="skill-item"><span>Attack Surface Reduction</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width: 88%;"></div></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Laser Timeline -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Track</span>
+        <h2 class="section-title">Work Experience & Research</h2>
+        <p class="section-desc">Hands-on defense engineering, security operations lab design, and behavioral cybersecurity thesis.</p>
+      </div>
+
+      <div class="timeline-track">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <h3 class="timeline-role">Cybersecurity Engineer & SOC Analyst</h3>
+            <div class="timeline-company">Independent Security Lab • Remote</div>
+            <div class="timeline-date">January 2025 – Present</div>
+            <ul class="timeline-points">
+              <li>Designed and maintained a SOC lab on Azure with curated Sentinel KQL detections, alert correlation, and incident triage workflows.</li>
+              <li>Built repeatable SOAR playbooks to accelerate incident containment time and enrich indicators of compromise.</li>
+              <li>Implemented telemetry-driven dashboards and log monitoring pipelines for proactive cloud threat identification.</li>
+              <li>Improved overall security posture through threat modeling, control validation, and attack surface reduction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <h3 class="timeline-role">Cybersecurity Researcher</h3>
+            <div class="timeline-company">Research & Security Engineering • India</div>
+            <div class="timeline-date">June 2024 – December 2024</div>
+            <ul class="timeline-points">
+              <li>Authored a human-centric cybersecurity thesis focused on secure behavior design and user-aware defensive controls.</li>
+              <li>Evaluated common security friction points and proposed practical, measurable mitigation strategies.</li>
+              <li>Mapped defense controls to realistic attacker workflows for stronger operational readiness.</li>
+              <li>Translated research findings into implementation checklists for secure product engineering teams.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-card">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">Let's Build Something Secure</h2>
+        <p class="section-desc">
+          Interested in collaborating on cloud defense, detection engineering, or incident response automation? Reach out directly.
+        </p>
+
+        <button id="copy-email-btn" class="contact-email-btn">
+          <span>pulkitonwork@gmail.com</span>
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.654 2H10a2 2 0 00-2 2z"/><path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2"/></svg>
+        </button>
+
+        <div class="social-links">
+          <a href="https://github.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://x.com/pulkitrais" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="X Profile">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="mailto:pulkitonwork@gmail.com" class="social-btn" aria-label="Send Email">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="copy-toast" class="toast-notice">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+    <span>Email copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Pulkit Rai • Hosted on <a href="https://pulkitrai.tech" style="color: var(--accent-cyan); text-decoration: none;">pulkitrai.tech</a> • Built for Production Cloud Defense</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
